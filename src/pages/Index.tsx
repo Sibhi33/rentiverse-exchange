@@ -105,7 +105,7 @@ const Index = () => {
             animate={{ opacity: 1, y: 0 }}
             className="font-montserrat text-3xl md:text-6xl font-bold mb-4 md:mb-6"
           >
-            किराए पर लें, कहीं से भी
+            Rent Anything From Anywhere
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
