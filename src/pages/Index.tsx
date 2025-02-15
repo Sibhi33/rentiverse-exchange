@@ -49,6 +49,41 @@ const featuredProducts = [
     rating: 4.7,
     category: "Accessories",
   },
+  {
+    title: "Professional Camera",
+    price: 45,
+    image: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?auto=format&fit=crop&q=80",
+    rating: 4.9,
+    category: "Electronics",
+  },
+  {
+    title: "Classic Blazer",
+    price: 25,
+    image: "https://images.unsplash.com/photo-1592878904946-b3cd8ae243d0?auto=format&fit=crop&q=80",
+    rating: 4.6,
+    category: "Fashion",
+  },
+  {
+    title: "Mountain Bike",
+    price: 35,
+    image: "https://images.unsplash.com/photo-1576435728678-68d0fbf94e91?auto=format&fit=crop&q=80",
+    rating: 4.8,
+    category: "Vehicles",
+  },
+  {
+    title: "DJ Equipment",
+    price: 120,
+    image: "https://images.unsplash.com/photo-1571266014386-d60451387c87?auto=format&fit=crop&q=80",
+    rating: 4.7,
+    category: "Electronics",
+  },
+  {
+    title: "Book Collection",
+    price: 15,
+    image: "https://images.unsplash.com/photo-1524578271613-d550eacf6090?auto=format&fit=crop&q=80",
+    rating: 4.5,
+    category: "Books",
+  },
 ];
 
 const Index = () => {
@@ -114,10 +149,13 @@ const Index = () => {
       {/* Featured Products Section */}
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="font-montserrat text-3xl font-bold text-center mb-12">
+          <h2 className="font-montserrat text-3xl font-bold text-center mb-4">
             Featured Rentals
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Making everything available for everyone - from books to bikes, blazers to equipment
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {featuredProducts.map((product, index) => (
               <motion.div
                 key={product.title}
