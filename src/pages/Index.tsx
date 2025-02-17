@@ -62,7 +62,7 @@ const Index = () => {
       {/* Header */}
       <header className="sticky top-0 z-50 bg-white border-b shadow-sm">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
-          <h1 className="font-montserrat text-xl font-bold text-accent">RentSocial</h1>
+          <h1 className="font-montserrat text-xl font-bold text-accent">Rentall</h1>
           <div className="flex-1 max-w-xl mx-4">
             <SearchBar />
           </div>
@@ -74,6 +74,25 @@ const Index = () => {
 
       {/* Main Content */}
       <main className="container mx-auto px-4 py-6 md:py-12">
+        {/* Hero Section with Tagline */}
+        <div className="text-center mb-12">
+          <motion.h2 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            className="font-montserrat text-3xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-accent to-primary bg-clip-text text-transparent"
+          >
+            Rent anything, anywhere, anytime
+          </motion.h2>
+          <motion.p 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2 }}
+            className="text-gray-600 text-lg md:text-xl max-w-2xl mx-auto"
+          >
+            Join the sharing revolution - list your items or find what you need
+          </motion.p>
+        </div>
+
         {/* Feed Navigation */}
         <div className="flex items-center justify-center mb-8 space-x-4">
           <Button variant="ghost" className="font-semibold">For You</Button>
